@@ -1,0 +1,1 @@
+<footer class="main"> &copy; 2018 <strong>Neptua Gym </strong></footer>

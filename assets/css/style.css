@@ -1,0 +1,779 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav-color {
+	background-color:#121315;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+#home-banner {
+	max-width:100%;
+	height:600px;
+	background: url('../img/home-banner.jpg') no-repeat fixed;
+    background-size: cover;
+    position:relative;
+    z-index:-1;
+}
+
+#about-banner {
+    max-width:100%;
+    height:600px;
+    background: url('../img/aboutus-banner.jpg') no-repeat fixed;
+    background-size: cover;
+    position:relative;
+    z-index:-1;
+}
+
+#facilities-banner {
+    max-width:100%;
+    height:600px;
+    background: url('../img/facilities-banner.jpg') no-repeat fixed;
+    background-size: cover;
+    position:relative;
+    z-index:-1;
+}
+
+#membership-banner {
+    max-width:100%;
+    height:600px;
+    background: url('../img/join-banner.jpg') no-repeat fixed;
+    background-size: cover;
+    position:relative;
+    z-index:-1;
+}
+
+#testimonials-banner {
+    max-width:100%;
+    height:600px;
+    background: url('../img/testimonial-banner.jpg') no-repeat fixed;
+    background-size: cover;
+    position:relative;
+    z-index:-1;
+}
+
+#blog-banner {
+    max-width:100%;
+    height:600px;
+    background: url('../img/blog-banner.jpg') no-repeat fixed;
+    background-size: cover;
+    position:relative;
+    z-index:-1;
+}
+
+#home-banner h1,
+#home-banner h4,
+#about-banner h1,
+#about-banner h4,
+#facilities-banner h1,
+#facilities-banner h4,
+#membership-banner h1,
+#membership-banner h4,
+#testimonials-banner h1,
+#testimonials-banner h4,
+#blog-banner h1,
+#blog-banner h4 {
+	color:#fff;
+}
+
+#home-banner h1, #about-banner h1, #facilities-banner h1, #membership-banner h1, #testimonials-banner h1, #blog-banner h1 {
+	font-size:75px;
+}
+
+#banner-button {
+	color:#fff;
+	background-color: #ee6059;
+}
+
+#banner-button:hover {
+	background-color: #ca554f
+}
+
+.banner-display {
+	position:fixed;
+	top:50%;
+	z-index:0;
+}
+
+@media only screen and (max-width: 500px) {
+    .banner-display {
+        position:absolute;
+		top:30%;
+    }
+}  
+
+@media only screen and (max-width: 900px) {
+    #home-banner{
+    	background: url('../img/home-banner1.jpg') no-repeat;
+    	height:400px;
+    }
+    .banner-display {
+        position:absolute;
+		top:30%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #home-banner{
+    	background: url('../img/home-banner2.jpg') no-repeat;
+    	height:300px;
+    }
+    .banner-display {
+        position:absolute;
+		top:20%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #home-banner{
+    	background: url('../img/home-banner4.jpg') no-repeat;
+    	height:200px;
+    }
+    .banner-display {
+        position:absolute;
+		top:0%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #home-banner{
+    	background: url('../img/home-banner3.jpg') no-repeat;
+    	height:169px;
+    }
+    .banner-display {
+        position:absolute;
+		top:0%;
+    }
+    #home-banner h1 {
+	font-size:20px;
+	}
+	#home-banner h4 {
+	font-size:14px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    #home-banner h1 {
+	font-size:40px;
+	}
+	#home-banner h4 {
+	font-size:20px;
+	}
+}
+
+#fitness-section {
+	background-color: #25292b;
+	padding: 10rem 0;
+}
+
+#signup {
+	background-color: #1e2123;
+	padding: 7rem 0;
+}
+
+#signup img {
+	transition: all 0.5s;
+}
+
+#signup img:hover {
+	transform: scale(1.1);
+    box-shadow: 1px 1px 10px black;
+}
+
+#signup #signup-button {
+	background-color: #ee6059;
+}
+
+#signup #signup-button:hover {
+	background-color: #ca554f
+}
+
+/*Buttom Ripple Effect*/
+
+.ripple{
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.ripple:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+/*end of Buttom Ripple Effect*/
+
+#features .font-awesome {
+    color: #ee6059;
+    font-size: 60px;
+    cursor:pointer;
+    border:1px solid #ee6059;
+    padding:20px;
+    border-radius:100%;
+    transition:all 0.5s;
+}
+
+#features .font-awesome:hover {
+	color: #FFF;
+	background-color: #ee6059;
+    font-size: 60px;
+    cursor:pointer;
+    padding:20px;
+    border-radius:100%;
+}
+
+#features {
+	width:100%;
+	background: url('../img/featuresbg.jpg') fixed;
+    background-size: cover;
+    position:relative;
+}
+
+.features-overlay {
+    background-color:rgba(0,0,0,0.8);
+    z-index: -2;
+}
+
+#results {
+	background-color: #25292b;
+}
+
+#results .results-details {
+	background-color: #1e2123;
+	border: 10px solid #25292b;
+}
+
+#name-hover:hover {
+    color:#ee6059 !important;
+}
+
+#facilities {
+    background-color: #1e2123;
+}
+
+
+#facilities .img {
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#facilities img:hover {
+    transform:scale(1.02);
+    border:0.33px solid #ee6059;
+    box-shadow: 1px 1px 10px black;
+}
+
+#quote {
+    background: url("../img/kick.jpeg") fixed;
+    background-size: cover;
+    background-position: relative;
+    width:100%;
+    height:400px;
+}
+
+#quote p, #quote h4 {
+    text-align: center;
+    position: relative;
+    top:50%;    
+}
+
+.quote-overlay {
+    background-color: rgba(0,0,0,0.8);
+    background-position: relative;
+    width:100%;
+    height:400px;
+}
+
+#trainers {
+    background-color: #1e2123;
+}
+
+#trainers .card{
+    background-color: #25292b;
+}
+
+#trainers .icons a {
+    color:#fff;
+    transition:all 0.3s;
+}
+
+#trainers .icons a:hover {
+    color:#ee6059;
+}
+
+.icons .fa {
+    padding:5px;
+    background-color: #ee6059;
+    border-radius: 5px;
+    min-width:25px;
+    transition:all 0.3s;
+}
+
+.icons .fa:hover {
+    background-color: #25292b;
+    border: 0.5px solid white;
+    border-radius: 5px;
+}
+
+#blog-news {
+    background-color:#25292b;
+}
+
+#blog-news .card {
+    background-color: #1e2123;
+}
+
+#join-us {
+    background: url("../img/join.jpg") no-repeat;
+    background-size: cover;
+    position:relative;
+    width:100%;
+    height:300px;
+}
+
+.signup-overlay {
+    background-color:#ee6059;
+    opacity:0.85;
+    width:100%;
+    height:300px;
+}
+
+#join-us .container {
+    position:absolute;
+    top:50%;
+}
+
+#secondary-footer {
+    background-color: #1e2123;
+}  
+
+#secondary-footer hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0.5px solid #ccc;
+    margin-top: 10px;
+    padding: 0;
+    width: 100%;
+}
+
+#secondary-footer a {
+    text-decoration: none;
+    transition: all 0.5s;
+}  
+
+#secondary-footer a:hover {
+    color: #ee6059 !important;
+}
+
+#secondary-footer .img {
+    transition:all 0.3s;
+}
+
+#secondary-footer .img:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 10px black;
+}
+
+.footer-icons .fa {
+    background-color:#ee6059;
+    color:#fff;
+    border-radius: 5px;
+    width:25px;
+    padding:5px;
+    transition: all 0.3s;
+}
+
+#footer {
+    background-color: #191c1e;
+}
+
+#footer p {
+    color:#fff;
+}
+
+.footer-icons .fa:hover {
+    background-color:#d0453e;
+}
+
+header ul li a{
+    transition: all 0.5s;
+    font-size: 1.5em;
+}
+
+header ul li a:hover {
+    color:#ee6059 !important;
+    box-shadow: 2px 2px 10px black; 
+}
+
+#opportunity {
+    background-color: #25292b;
+}
+
+.opportunity-color {
+    color:#ccc;
+}
+
+#opportunity .fa, #why-us .fa {
+    color:#ee6059;
+    padding:5px;
+}
+
+#opportunity .img {
+    transition: all 0.5s
+}
+
+#opportunity .img:hover {
+    box-shadow: 2px 2px 10px black;
+    transform: scale(1.02); 
+}
+
+#why-us {
+    background-color: #1e2123;
+}
+
+#why-us .card {
+    background-color: #25292b;
+}
+
+#why-us p {
+    color:#ccc;
+    font-size:14px;
+    margin:5px;
+}
+
+.about-facilities {
+    background-color: #25292b!important;
+}
+
+#facilities-details {
+    background-color: #1e2123
+}
+
+.facilities1 {
+    max-width:100%;
+    height:300px;
+    background: url('../img/facilities1.jpg') no-repeat;
+    background-size: cover;
+    position:relative;
+    border: 10px solid #1e2123;
+    transition: all 0.5s;
+}
+
+.facilities2 {
+    max-width:100%;
+    height:300px;
+    background: url('../img/facilities2.jpg') no-repeat;
+    background-size: cover;
+    position:relative;
+    border: 10px solid #1e2123;
+    transition: all 0.5s;
+}
+
+.facilities3 {
+    max-width:100%;
+    height:300px;
+    background: url('../img/facilities3.jpg') no-repeat;
+    background-size: cover;
+    position:relative;
+    border: 10px solid #1e2123;
+    transition: all 0.5s;
+}
+
+.facilities4 {
+    max-width:100%;
+    height:300px;
+    background: url('../img/facilities4.jpg') no-repeat;
+    background-size: cover;
+    position:relative;
+    border: 10px solid #1e2123;
+    transition: all 0.5s;
+}
+
+.facilities5 {
+    max-width:100%;
+    height:300px;
+    background: url('../img/facilities5.jpg') no-repeat;
+    background-size: cover;
+    position:relative;
+    border: 10px solid #1e2123;
+    transition: all 0.5s;
+}
+
+.facilities6 {
+    max-width:100%;
+    height:300px;
+    background: url('../img/facilities6.jpg') no-repeat;
+    background-size: cover;
+    position:relative;
+    border: 10px solid #1e2123;
+    transition: all 0.3s;
+}
+
+.facilities-article {
+    position:absolute;
+    bottom:0;
+    color:#fff;
+    text-align:center;
+    background-color: rgba(0,0,0,0.6)
+}
+
+.facilities1:hover, .facilities2:hover,.facilities3:hover,.facilities4:hover,.facilities5:hover,.facilities6:hover {
+    transform: scale(1.05);
+}
+
+#facilities-opp {
+    background-color: #1e2123;
+}
+
+.facilities-opp-area {
+    background-color: #25292b;
+    color:#fff;
+    padding:1em 2em;
+}
+
+.facilities-opp-area .fa {
+    color:#ee6059;
+    transition:all 0.3s;
+}
+
+.facilities-opp-area .fa:hover {
+    padding-left:5px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ee6059;
+}
+
+#more-details .nav-item a {
+    color:#fff;
+}
+
+#more-details {
+    background-color: #25292b;
+}
+
+#more-details #pills-tab {
+    background-color: #25292b;
+}
+
+.membership-facilities1 {
+    background:url("../img/join1.jpg") no-repeat;
+    background-size: cover;
+    position:relative;
+    max-width:100%;
+    height:300px; 
+}
+
+.membership-facilities2 {
+    background:url("../img/join2.jpg") no-repeat;
+    background-size: cover;
+    position:relative;
+    max-width:100%;
+    height:300px; 
+}
+
+.membership-facilities3 {
+    background:url("../img/join3.jpg") no-repeat;
+    background-size: cover;
+    position:relative;
+    max-width:100%;
+    height:300px; 
+}
+
+#membership-facilities .row {
+    position: relative;
+}
+
+#membership-facilities .align-middle {
+    position:absolute;
+    top:30%;
+}
+
+#faq-section {
+    background-color: #25292b;
+}
+
+/*ACCORDIAN STYLE*/
+
+.card-header, .btn-link,.btn-link:hover{
+    background-color:#1e2123;
+    text-align:center;
+    color:#fff;
+}
+
+#faq-section .btn-link {
+    text-decoration: none;
+}
+
+#faq-section .btn-link:hover {
+    color:#ee6059;
+}
+
+.btn-link:after {
+   content: "-";
+   position:relative;
+   color:#ccc;
+   margin-left:10px;
+}
+
+.btn-link.collapsed:after {
+   content: "+";
+}
+
+@media only screen and (max-width: 767px) {
+    #faq-section #accordion {
+        margin-top:30px;
+    }
+} 
+
+#slider {
+    background-color: #1e2123;
+} 
+
+#membership-area {
+    background:url("../img/blog4.jpg") no-repeat;
+    background-size: cover;
+    position:relative;
+    max-width:100%;
+    height:500px; 
+}
+
+.membership-overlay {
+    background-color: rgba(0,0,0,0.8);
+    position:relative;
+    max-width:100%;
+    height:500px;
+}
+
+#membership-area .btn {
+    color:#ee6059;
+    background-color: transparent;
+    border:0.5px solid #fff;
+}
+
+#membership-area .btn:hover {
+    background-color:#ee6059;
+    border: none;
+    color:#fff;
+}
+
+#membership-area .form-group .form-bg {
+    background-color: transparent;
+}
+
+#membership-area .form-bg {
+    color:#ee6059;
+}
+
+.form-bg::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+#testimonials-results .bg-color {
+    background-color: #25292b;
+}
+
+#testimonials-results .text-color {
+    color:#ee6059 !important;
+}
+
+#testimonials-results {
+    background-color: #1e2123;
+}
+
+#customer-quote {
+    background:url("../img/facilities1.jpg") no-repeat;
+    background-size: cover;
+    position:relative;
+    max-width:100%;
+    height:500px; 
+}
+
+.customer-overlay {
+    background-color: rgba(0,0,0,0.8);
+    position:relative;
+    max-width:100%;
+    height:500px;
+}
+
+.quote-text {
+    position:absolute;
+    top:40%;
+    left:15%;
+}
+
+#customer-quote .text-color {
+    color:#ee6059;
+}
+
+#confirm {
+    background-color: #1e2123;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+#signup .btn-color {
+    background-color:#ee6059;
+    color:#fff;
+    border:none;
+}
+
+#signup .btn-color:hover {
+    background-color:#b94a48;
+}
